@@ -62,10 +62,10 @@ input, select { font-family: inherit; }
   padding: 0 20px;
 }
 
-.desktop-only { display: none; }
+.desktop-only { display: none !important; }
 .mobile-only { display: inline-flex; }
 @media (min-width: 900px) {
-  .desktop-only { display: flex; }
+  .desktop-only { display: flex !important; }
   .mobile-only { display: none !important; }
 }
 
@@ -312,7 +312,10 @@ input, select { font-family: inherit; }
 .price-mrp { font-size: .78rem; color: var(--color-text-muted); text-decoration: line-through; }
 .price-discount { font-size: .74rem; color: var(--color-success); font-weight: 700; }
 .product-actions { display: flex; gap: 6px; margin-top: 8px; }
-.product-actions .btn { flex: 1; padding: 9px 8px; font-size: .68rem; }
+.product-actions .btn { flex: 1; min-width: 0; padding: 9px 6px; font-size: .66rem; letter-spacing: .01em; }
+@media (max-width: 420px) {
+  .product-actions { flex-direction: column; }
+}
 
 /* ================= PROMO BANNER ================= */
 .promo-banner { background: var(--color-red); color: #fff; padding: 56px 0; }

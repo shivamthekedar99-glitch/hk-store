@@ -32,14 +32,14 @@ const COUPONS = {
 // CATEGORY LIST (used for menus, filters, category tiles)
 // ==========================================
 const CATEGORIES = [
-  { id: "kitchen-essentials", name: "Kitchen Essentials", image: "https://placehold.co/500x600/F3EEE5/24211D?text=Kitchen+Essentials" },
-  { id: "home-organization", name: "Home Organization", image: "https://placehold.co/500x600/F3EEE5/24211D?text=Home+Organization" },
-  { id: "storage-solutions", name: "Storage Solutions", image: "https://placehold.co/500x600/F3EEE5/24211D?text=Storage+Solutions" },
-  { id: "home-decor", name: "Home Decor", image: "https://placehold.co/500x600/F3EEE5/24211D?text=Home+Decor" },
-  { id: "dining-serving", name: "Dining & Serving", image: "https://placehold.co/500x600/F3EEE5/24211D?text=Dining+%26+Serving" },
-  { id: "cleaning-utility", name: "Cleaning & Utility", image: "https://placehold.co/500x600/F3EEE5/24211D?text=Cleaning+%26+Utility" },
-  { id: "bathroom", name: "Bathroom", image: "https://placehold.co/500x600/F3EEE5/24211D?text=Bathroom" },
-  { id: "new-arrivals", name: "New Arrivals", image: "https://placehold.co/500x600/F3EEE5/24211D?text=New+Arrivals" }
+  { id: "kitchen-essentials", name: "Kitchen Essentials", image: "images/categories/kitchen-essentials.jpg" },
+  { id: "home-organization", name: "Home Organization", image: "images/categories/home-organization.jpg" },
+  { id: "storage-solutions", name: "Storage Solutions", image: "images/categories/storage-solutions.jpg" },
+  { id: "home-decor", name: "Home Decor", image: "images/categories/home-decor.jpg" },
+  { id: "dining-serving", name: "Dining & Serving", image: "images/categories/dining-serving.jpg" },
+  { id: "cleaning-utility", name: "Cleaning & Utility", image: "images/categories/cleaning-utility.jpg" },
+  { id: "bathroom", name: "Bathroom", image: "images/categories/bathroom.jpg" },
+  { id: "new-arrivals", name: "New Arrivals", image: "images/categories/new-arrivals.jpg" }
 ];
 
 // ==========================================
@@ -60,12 +60,9 @@ const products = [
     category: "kitchen-essentials",
     price: 899, mrp: 1499,
     rating: 4.4, reviews: 212,
-    image: "https://placehold.co/700x700/F3EEE5/24211D?text=Casserole",
+    image: "images/products/p1_1.jpg",
     gallery: [
-      "https://placehold.co/700x700/F3EEE5/24211D?text=Casserole+1",
-      "https://placehold.co/700x700/EFE9DC/24211D?text=Casserole+2",
-      "https://placehold.co/700x700/F3EEE5/24211D?text=Casserole+3"
-    ],
+      "images/products/p1_1.jpg", "images/products/p1_2.jpg", "images/products/p1_3.jpg"],
     description: "Keep rotis and rice warm for hours with this double-walled insulated casserole. Sturdy stainless steel body with a comfortable carry handle, ideal for daily meals and gatherings.",
     features: ["Keeps food warm up to 6 hours", "Food-grade stainless steel inner body", "Break-resistant outer shell", "Easy-grip handles", "1.5 Litre capacity"],
     isNew: false, isBestSeller: true, dateAdded: "2026-05-02"
@@ -76,11 +73,9 @@ const products = [
     category: "kitchen-essentials",
     price: 649, mrp: 999,
     rating: 4.3, reviews: 158,
-    image: "https://placehold.co/700x700/F3EEE5/24211D?text=Tawa",
+    image: "images/products/p2_1.jpg",
     gallery: [
-      "https://placehold.co/700x700/F3EEE5/24211D?text=Tawa+1",
-      "https://placehold.co/700x700/EFE9DC/24211D?text=Tawa+2"
-    ],
+      "images/products/p2_1.jpg", "images/products/p2_2.jpg"],
     description: "A everyday non-stick tawa that works on gas and induction cooktops. Even heat distribution makes it perfect for rotis, dosas and parathas.",
     features: ["Induction & gas compatible", "3-layer non-stick coating", "Riveted heat-resistant handle", "26cm diameter"],
     isNew: false, isBestSeller: true, dateAdded: "2026-04-11"
@@ -91,12 +86,9 @@ const products = [
     category: "storage-solutions",
     price: 549, mrp: 899,
     rating: 4.5, reviews: 301,
-    image: "https://placehold.co/700x700/F3EEE5/24211D?text=Fridge+Containers",
+    image: "images/products/p3_1.jpg",
     gallery: [
-      "https://placehold.co/700x700/F3EEE5/24211D?text=Containers+1",
-      "https://placehold.co/700x700/EFE9DC/24211D?text=Containers+2",
-      "https://placehold.co/700x700/F3EEE5/24211D?text=Containers+3"
-    ],
+      "images/products/p3_1.jpg", "images/products/p3_2.jpg", "images/products/p3_3.jpg"],
     description: "Stackable, space-saving containers designed to fit neatly inside your refrigerator shelves. Keep vegetables and leftovers organized and fresh.",
     features: ["Set of 6 stackable containers", "BPA-free food grade plastic", "Airtight snap-lock lids", "Transparent body to spot contents easily"],
     isNew: false, isBestSeller: true, dateAdded: "2026-03-20"
@@ -107,11 +99,9 @@ const products = [
     category: "home-organization",
     price: 749, mrp: 1199,
     rating: 4.2, reviews: 96,
-    image: "https://placehold.co/700x700/F3EEE5/24211D?text=Organizer+Rack",
+    image: "images/products/p4_1.jpg",
     gallery: [
-      "https://placehold.co/700x700/F3EEE5/24211D?text=Rack+1",
-      "https://placehold.co/700x700/EFE9DC/24211D?text=Rack+2"
-    ],
+      "images/products/p4_1.jpg", "images/products/p4_2.jpg"],
     description: "Free up counter space with this rust-resistant wall organizer. Great for spice jars, cutting boards and everyday kitchen tools.",
     features: ["Rust-resistant coated steel", "Easy wall mounting kit included", "Multiple hooks and shelves", "Space-saving vertical design"],
     isNew: true, isBestSeller: false, dateAdded: "2026-07-14"
@@ -122,12 +112,9 @@ const products = [
     category: "dining-serving",
     price: 1299, mrp: 1999,
     rating: 4.6, reviews: 184,
-    image: "https://placehold.co/700x700/F3EEE5/24211D?text=Dinner+Plates",
+    image: "images/products/p5_1.jpg",
     gallery: [
-      "https://placehold.co/700x700/F3EEE5/24211D?text=Plates+1",
-      "https://placehold.co/700x700/EFE9DC/24211D?text=Plates+2",
-      "https://placehold.co/700x700/F3EEE5/24211D?text=Plates+3"
-    ],
+      "images/products/p5_1.jpg", "images/products/p5_2.jpg", "images/products/p5_3.jpg"],
     description: "Elevate your dining table with these elegant ceramic dinner plates. Sturdy, chip-resistant and dishwasher safe for everyday and special occasions.",
     features: ["Set of 6 dinner plates", "Chip-resistant ceramic", "Microwave & dishwasher safe", "10-inch diameter"],
     isNew: false, isBestSeller: true, dateAdded: "2026-02-18"
@@ -138,11 +125,9 @@ const products = [
     category: "cleaning-utility",
     price: 399, mrp: 599,
     rating: 4.1, reviews: 77,
-    image: "https://placehold.co/700x700/F3EEE5/24211D?text=Cleaning+Kit",
+    image: "images/products/p6_1.jpg",
     gallery: [
-      "https://placehold.co/700x700/F3EEE5/24211D?text=Cleaning+1",
-      "https://placehold.co/700x700/EFE9DC/24211D?text=Cleaning+2"
-    ],
+      "images/products/p6_1.jpg", "images/products/p6_2.jpg"],
     description: "A complete kit with refillable spray bottles and microfiber cloths for quick daily cleaning across the home.",
     features: ["2 refillable spray bottles", "3 microfiber cloths included", "Adjustable nozzle spray", "Compact storage design"],
     isNew: true, isBestSeller: false, dateAdded: "2026-07-02"
@@ -153,11 +138,9 @@ const products = [
     category: "bathroom",
     price: 449, mrp: 749,
     rating: 4.0, reviews: 63,
-    image: "https://placehold.co/700x700/F3EEE5/24211D?text=Bathroom+Shelf",
+    image: "images/products/p7_1.jpg",
     gallery: [
-      "https://placehold.co/700x700/F3EEE5/24211D?text=Shelf+1",
-      "https://placehold.co/700x700/EFE9DC/24211D?text=Shelf+2"
-    ],
+      "images/products/p7_1.jpg", "images/products/p7_2.jpg"],
     description: "A rust-proof corner shelf that makes the most of unused bathroom space for your daily essentials.",
     features: ["Rust-proof stainless finish", "No-drill adhesive mount", "3-tier storage", "Fits standard bathroom corners"],
     isNew: false, isBestSeller: false, dateAdded: "2026-01-30"
@@ -168,11 +151,9 @@ const products = [
     category: "home-decor",
     price: 349, mrp: 599,
     rating: 4.3, reviews: 54,
-    image: "https://placehold.co/700x700/F3EEE5/24211D?text=Table+Runner",
+    image: "images/products/p8_1.jpg",
     gallery: [
-      "https://placehold.co/700x700/F3EEE5/24211D?text=Runner+1",
-      "https://placehold.co/700x700/EFE9DC/24211D?text=Runner+2"
-    ],
+      "images/products/p8_1.jpg", "images/products/p8_2.jpg"],
     description: "Add a warm, handcrafted touch to your dining table with this handwoven cotton runner, made by local artisans.",
     features: ["100% handwoven cotton", "Machine washable", "13 x 72 inches", "Fade-resistant natural dyes"],
     isNew: true, isBestSeller: false, dateAdded: "2026-06-25"
@@ -183,12 +164,9 @@ const products = [
     category: "storage-solutions",
     price: 799, mrp: 1299,
     rating: 4.5, reviews: 142,
-    image: "https://placehold.co/700x700/F3EEE5/24211D?text=Glass+Jars",
+    image: "images/products/p9_1.jpg",
     gallery: [
-      "https://placehold.co/700x700/F3EEE5/24211D?text=Jars+1",
-      "https://placehold.co/700x700/EFE9DC/24211D?text=Jars+2",
-      "https://placehold.co/700x700/F3EEE5/24211D?text=Jars+3"
-    ],
+      "images/products/p9_1.jpg", "images/products/p9_2.jpg", "images/products/p9_3.jpg"],
     description: "Borosilicate glass jars with airtight lids to keep grains, spices and snacks fresh while looking neat on your shelf.",
     features: ["Set of 4 jars, 1L each", "Airtight rubber-seal lids", "Oven and freezer safe glass", "Stackable design"],
     isNew: false, isBestSeller: true, dateAdded: "2026-03-05"
@@ -199,11 +177,9 @@ const products = [
     category: "home-organization",
     price: 499, mrp: 799,
     rating: 4.2, reviews: 88,
-    image: "https://placehold.co/700x700/F3EEE5/24211D?text=Laundry+Basket",
+    image: "images/products/p10_1.jpg",
     gallery: [
-      "https://placehold.co/700x700/F3EEE5/24211D?text=Basket+1",
-      "https://placehold.co/700x700/EFE9DC/24211D?text=Basket+2"
-    ],
+      "images/products/p10_1.jpg", "images/products/p10_2.jpg"],
     description: "A collapsible laundry basket that folds flat for storage when not in use — practical for compact Indian homes.",
     features: ["Collapsible & lightweight", "Reinforced carry handles", "45L capacity", "Water-resistant fabric"],
     isNew: false, isBestSeller: false, dateAdded: "2026-02-02"
@@ -214,11 +190,9 @@ const products = [
     category: "dining-serving",
     price: 599, mrp: 899,
     rating: 4.4, reviews: 121,
-    image: "https://placehold.co/700x700/F3EEE5/24211D?text=Serving+Bowls",
+    image: "images/products/p11_1.jpg",
     gallery: [
-      "https://placehold.co/700x700/F3EEE5/24211D?text=Bowls+1",
-      "https://placehold.co/700x700/EFE9DC/24211D?text=Bowls+2"
-    ],
+      "images/products/p11_1.jpg", "images/products/p11_2.jpg"],
     description: "Durable stainless steel serving bowls in three handy sizes, perfect for daily meals and festive gatherings alike.",
     features: ["Set of 3 nesting bowls", "Rust-resistant stainless steel", "Mirror-polish finish", "Dishwasher safe"],
     isNew: false, isBestSeller: false, dateAdded: "2026-01-15"
@@ -229,11 +203,9 @@ const products = [
     category: "home-decor",
     price: 1099, mrp: 1799,
     rating: 4.6, reviews: 47,
-    image: "https://placehold.co/700x700/F3EEE5/24211D?text=Table+Lamp",
+    image: "images/products/p12_1.jpg",
     gallery: [
-      "https://placehold.co/700x700/F3EEE5/24211D?text=Lamp+1",
-      "https://placehold.co/700x700/EFE9DC/24211D?text=Lamp+2"
-    ],
+      "images/products/p12_1.jpg", "images/products/p12_2.jpg"],
     description: "A warm ceramic table lamp that adds a cozy glow to living rooms and bedrooms. A subtle style upgrade for any corner.",
     features: ["Ceramic base with fabric shade", "Soft ambient lighting", "E27 bulb holder (bulb not included)", "16-inch height"],
     isNew: true, isBestSeller: false, dateAdded: "2026-07-20"
@@ -244,11 +216,9 @@ const products = [
     category: "bathroom",
     price: 299, mrp: 499,
     rating: 4.1, reviews: 69,
-    image: "https://placehold.co/700x700/F3EEE5/24211D?text=Floor+Mat",
+    image: "images/products/p13_1.jpg",
     gallery: [
-      "https://placehold.co/700x700/F3EEE5/24211D?text=Mat+1",
-      "https://placehold.co/700x700/EFE9DC/24211D?text=Mat+2"
-    ],
+      "images/products/p13_1.jpg", "images/products/p13_2.jpg"],
     description: "A super-absorbent, quick-drying bathroom mat with a non-slip base to keep your floor safe and dry.",
     features: ["Super absorbent microfiber", "Non-slip rubber base", "Machine washable", "40 x 60 cm"],
     isNew: false, isBestSeller: false, dateAdded: "2026-01-08"
@@ -259,12 +229,9 @@ const products = [
     category: "kitchen-essentials",
     price: 1699, mrp: 2499,
     rating: 4.7, reviews: 266,
-    image: "https://placehold.co/700x700/F3EEE5/24211D?text=Pressure+Cooker",
+    image: "images/products/p14_1.jpg",
     gallery: [
-      "https://placehold.co/700x700/F3EEE5/24211D?text=Cooker+1",
-      "https://placehold.co/700x700/EFE9DC/24211D?text=Cooker+2",
-      "https://placehold.co/700x700/F3EEE5/24211D?text=Cooker+3"
-    ],
+      "images/products/p14_1.jpg", "images/products/p14_2.jpg", "images/products/p14_3.jpg"],
     description: "A reliable everyday pressure cooker built with certified safety features, sized right for a small to mid-size family.",
     features: ["5 Litre capacity", "Certified safety valve system", "Induction & gas compatible", "Sturdy stay-cool handles"],
     isNew: false, isBestSeller: true, dateAdded: "2026-04-28"
@@ -275,11 +242,9 @@ const products = [
     category: "kitchen-essentials",
     price: 549, mrp: 849,
     rating: 4.3, reviews: 92,
-    image: "https://placehold.co/700x700/F3EEE5/24211D?text=Cutting+Boards",
+    image: "images/products/p15_1.jpg",
     gallery: [
-      "https://placehold.co/700x700/F3EEE5/24211D?text=Boards+1",
-      "https://placehold.co/700x700/EFE9DC/24211D?text=Boards+2"
-    ],
+      "images/products/p15_1.jpg", "images/products/p15_2.jpg"],
     description: "A set of durable bamboo cutting boards in three sizes — gentle on knife edges and naturally resistant to odours.",
     features: ["Set of 3 sizes", "100% natural bamboo", "Knife-friendly surface", "Built-in hanging hole"],
     isNew: true, isBestSeller: false, dateAdded: "2026-07-09"
@@ -290,11 +255,9 @@ const products = [
     category: "home-organization",
     price: 649, mrp: 999,
     rating: 4.4, reviews: 58,
-    image: "https://placehold.co/700x700/F3EEE5/24211D?text=Woven+Baskets",
+    image: "images/products/p16_1.jpg",
     gallery: [
-      "https://placehold.co/700x700/F3EEE5/24211D?text=Woven+1",
-      "https://placehold.co/700x700/EFE9DC/24211D?text=Woven+2"
-    ],
+      "images/products/p16_1.jpg", "images/products/p16_2.jpg"],
     description: "Handy woven baskets for organizing toys, magazines, or pantry items — sturdy build with a natural, tidy look.",
     features: ["Set of 2 baskets", "Reinforced handles", "Sturdy woven build", "Multi-purpose use"],
     isNew: true, isBestSeller: false, dateAdded: "2026-06-30"
@@ -445,6 +408,12 @@ function toggleWishlist(id) {
   saveToStorage("hk_wishlist", wishlist);
   updateBadges();
   refreshWishlistButtons();
+  // If the wishlist page itself is currently open, re-render its grid so a
+  // removed item disappears immediately and the empty state can appear.
+  const wishlistView = document.getElementById("view-wishlist");
+  if (wishlistView && !wishlistView.hidden) {
+    renderWishlistView();
+  }
 }
 function refreshWishlistButtons() {
   document.querySelectorAll("[data-wishlist-id]").forEach(btn => {
@@ -963,19 +932,22 @@ function renderCartTotals() {
 function initCouponHandler() {
   document.getElementById("applyCouponBtn").addEventListener("click", () => {
     const code = document.getElementById("couponInput").value.trim().toUpperCase();
-    const msgEl = document.getElementById("couponMsg");
     if (!code) { return; }
     if (COUPONS[code]) {
       appliedCoupon = code;
       saveToStorage("hk_coupon", appliedCoupon);
-      msgEl.textContent = COUPONS[code].label + " applied";
-      msgEl.className = "coupon-msg success";
       showToast("Coupon applied ✓");
+      renderCartTotals();
     } else {
+      // Update totals first (keeps any previously applied valid coupon working),
+      // then show the error message and the code the user tried, without it
+      // being immediately overwritten by renderCartTotals' own message sync.
+      renderCartTotals();
+      const msgEl = document.getElementById("couponMsg");
       msgEl.textContent = "Invalid coupon code.";
       msgEl.className = "coupon-msg error";
+      document.getElementById("couponInput").value = code;
     }
-    renderCartTotals();
     if (!document.getElementById("view-checkout").hidden) renderCheckoutSummary();
   });
 }
@@ -1220,7 +1192,11 @@ function router() {
     renderPolicyPage(key);
     updateBottomNavActive("");
 
-  } else if (path === "account" || path === "contact" || path === "faq" || path === "about") {
+  } else if (path === "account") {
+    showView("view-account");
+    updateBottomNavActive("");
+
+  } else if (path === "contact" || path === "faq" || path === "about") {
     showView("view-home");
     setTimeout(() => {
       const el = document.getElementById(path);
